@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "stu.cn.ua.lab1"
+    namespace = "stu.cn.ua.lab4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "stu.cn.ua.lab1"
+        applicationId = "stu.cn.ua.lab4"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -51,10 +51,19 @@ android {
 
 dependencies {
 
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("androidx.room:room-runtime:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.0")
+    implementation("androidx.activity:activity-compose:1.8.1")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")

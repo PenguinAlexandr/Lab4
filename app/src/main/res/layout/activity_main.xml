@@ -1,35 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/AppTheme"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/askQuestionButton"
-        style="@style/ButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="16dp"
-        android:text="@string/ask_question" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
 
-    <Button
-        android:id="@+id/settingsButton"
-        style="@style/ButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_above="@id/askQuestionButton"
-        android:layout_centerInParent="true"
-        android:text="@string/settings" />
-
-    <Button
-        android:id="@+id/exitButton"
-        style="@style/ButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_below="@id/askQuestionButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="@string/exit" />
 </RelativeLayout>
